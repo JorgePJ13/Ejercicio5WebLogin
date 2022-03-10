@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Login Usuario</title>
+		<link rel="stylesheet" href="css/styleLogin.css">
+	</head>
+	<body>
+		<div id="cuerpo">			
+			<div id="cuerpo_Login">			
+				<div id="loginText">
+					<h4>Iniciar Sesión</h4>
+				</div>		
+				<form method="post" action="LoginServlet">
+					<fieldset id="loginForm">
+						<legend> Introducir Credenciales</legend>
+						<div>
+							<label class="indicador_login" for="nombre">
+								Usuario/Email: <input type="text" name="nombre" required/>
+							</label> 
+						</div>
+						<div>
+							<label class="indicador_login" for="password">
+								Contraseña: <input type="password" name="password" required/>
+							</label>
+						</div>
+						<div id="boton_login">
+             	 			<a href="index.html">
+                				<input id="button" type="submit" value="Login"/>
+              				</a>
+						</div>
+					</fieldset>
+				</form>	
+				<div id="registro">
+					<a href=""><span>Regístrate ahora</span></a>
+				</div>			
+			</div>
+		</div>	
+	</body>
+</html>
