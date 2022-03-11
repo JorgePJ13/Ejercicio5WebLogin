@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML</title>
+  </head>
+  <body style="background-color: beige;">
+    <header style="text-align: center; font-size: 30px; font-weight: bold; color: blue;">World Padel Tour</header>
+    <main>
+      <p style="text-align: center; font-size: 18px;">En esta página encontrarás toda la información sobre el mejor padel del mundo: <span style="font-weight: bold; font-style: oblique;">World Padel Tour</span></p>
+      <div style="font-size: large; margin-top: 50px;">
+        <nav style="margin-left: 12px; font-style: oblique; text-transform: uppercase; text-decoration: overline; position: relative;">¿No sabes donde reservar las entradas? -- 
+          <a href="https://www.worldpadeltour.com/" target="_blank" style="text-decoration: none;">Visita nuestra Página Web!</a>
+        </nav>
+      </div>   
+      
+      <div style="padding: 12px;">
+        <h2 style="color: darkred;">¿Que es lo que buscas?</h2>
+        <ul style="font-size: 18px; list-style-type: square; list-style-position: inside;">
+          <div>
+            <a href="resultados.html" target="_blank" style="text-decoration: none; color: blueviolet;"> 
+              <li>
+                Resultados
+              </li>
+            </a><br>
+            <a href="ranking.html" target="_blank" style="text-decoration: none; color: blueviolet;">
+              <li>
+              Ranking WPT
+              </li>
+            </a><br>
+            <a href="#enlaceTorneo" style="text-decoration: none; color: blueviolet;">
+              <li>
+                Torneos
+              </li>
+            </a><br>
+            <a href="#AlistarteTorneo" style="text-decoration: none; color: blueviolet;">
+              <li>
+                Apúntate al próximo torneo
+              </li>
+            </a><br>
+          </div>
+        </ul>
+      </div>
+      <section style="padding: 12px; font-family: Roboto; display: flex; position: relative;">
+        <h2 style="color: darkred;">Sección de noticias padelísticas</h2>
+        <article style="margin-left: 50px; position: relative; margin-right: 40px; left: 15px;">
+            <h3>Lamperti y Yanguas: Ruptura inminente</h3>
+            <p style="font-size: 16px;">Ya dice el dicho: Cuando el río suena, agua lleva. Y esto es lo que ha pasado con esta bonita pareja...</p>
+        </article>
+        <article style="margin-left: 20px; position: relative; left: 15%;">
+            <h3>¿Nueva pareja Lima-Maxi?</h3>
+            <p style="font-size: 16px;">Parece que el amor en el pádel ha surgido entre el brasileño y el argentino...</p>
+        </article>
+        <article style="margin-left: 20px; position: relative; top: 150px; right: 50%;">
+          <h3>La pareja interminable</h3>
+          <p style="font-size: 16px;">Si hay una pareja en WPT que tiene pinta que nunca se va a separar, esa es la formada por el "Gato" Tello y el "Ratón" Chingoto...</p>
+        </article>
+      </section>
+      <aside style="padding-left: 12px; position: relative; bottom: 20px;">
+        <img id="fotoWPT" src="images/wpt.png" style="width: 12%; height: 12%;"/>
+      </aside>
+      <div style="padding: 12px;">
+        <h2 id="enlaceTorneo" style="color: darkred;">Proximos Torneos en WPT</h2>
+        <ol start="8" type="1">
+          <div style="font-size: 18px;">
+            <li>
+              Torneo en Gijón, Asturias <i>(5-7 Marzo)</i>
+            </li><br>
+            <li>
+              Torneo en Málaga, Andalucia <i>(8-10 Abril)</i>
+            </li><br>
+            <li>
+              Torneo en París, Francia <i>(18-20 Mayo)</i>
+            </li><br>
+          </div>
+        </ol>
+      </div>  
+      <div id="AlistarteTorneo" style="padding: 12px;">
+        <h3 style="font-size: 24px; color: purple;">Rellena el formulario</h3>
+        <form action="procesarInformacion.jsp" method="post">
+          <fieldset style="padding: 12px; font-family: Roboto;"><legend style="font-weight: bold;">Datos personales</legend>
+            <label for="Nombre">Introduce tu nombre: </label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Julio Cesar" required />
+            <br><br>
+            <label for="Edad">Introduce tu edad: </label>
+            <input type="number" min="18" max="80" step="1" name="Edad" id="Edad" placeholder="33" required />
+            <br><br>
+            <label for="Email">Introduce tu correo electronico: </label>
+            <input type="email" name="Email" placeholder="cesar@gmail.com" required/>
+            <br><br>
+            <label for="Tel">Número de Teléfono</label>
+            <input type="tel" name="Tel" id="Tel" placeholder="+34 666555444" required />
+            <br><br>
+            <label for="Fecha">Elige la fecha en la que quieras participar: </label>
+            <input type="date" name="Fecha" autofocus required/>
+            <br><br>
+            <input type="submit" value="Enviar"/>
+          </fieldset>
+        </form>
+      </div>  
+    </main>
+    <footer style="margin-top: 50px;">
+      <p>Todos los derechos reservador! copyright 2021 &copy;</p>
+    </footer>
+  </body>
+</html>
