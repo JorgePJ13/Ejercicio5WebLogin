@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="css/styleResultado.css">
 	</head>
 	<body>
-		<h1>Error al inicar sesión</h1>
-		<p>Usuario/Contraseña no coinciden!</p>
-		<p>Vuelve a intentarlo accediendo aquí: <a href="login.html">Login</a></p>
+		<h1>Error al iniciar sesión</h1>
+		<h3>Usuario/Contraseña no coinciden!</h3>
+		<h3>Vuelve a intentarlo accediendo aquí: <a href="login.html">Login</a></h3>
 	</body>
 </html>
